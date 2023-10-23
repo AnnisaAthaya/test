@@ -1,0 +1,135 @@
+:root {
+  --header-color: #435334;
+  --sidebar-color: #435334;
+  --homecontent-color: #cedebd;
+  --footer-color: #faf1e4;
+  --table1-color: #cedebd;
+  --table2-color: #faf1e4;
+}
+
+* {
+  font-family: "poppins";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+}
+/*scrollbar start*/
+::-webkit-scrollbar {
+  width: 8px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #007bff;
+}
+
+/*scrollbar end*/
+
+/*header & sidebar start*/
+.header-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 20vh;
+  padding: 10px 2%;
+  color: #fff;
+  background-color: var(--header-color);
+}
+
+.middle-content {
+  padding-top: 30px;
+  height: 96.1vh;
+}
+
+.sidebar {
+  background-color: var(--sidebar-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 900;
+  list-style: none;
+  width: 8vw;
+  height: 100%;
+  flex: 1;
+}
+
+.sidebar a {
+  color: #fff;
+}
+
+.sidebar a:hover {
+  color: #271c19;
+}
+
+.sidebar ul li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.table-container {
+  padding: 100px 0px 0px 150px;
+  justify-content: center;
+}
+
+/*header & sidebar end*/
+
+/* Table css start*/
+table {
+  width: 1150px;
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+}
+
+tr:nth-child(odd) {
+  background-color: var(--table1-color);
+}
+
+tr:nth-child(even) {
+  background-color: var(--table2-color);
+}
+
+/* Table css end*/
+
+/* footer css start*/
+
+footer {
+  background-color: var(--footer-color);
+  padding-left: 10rem;
+  bottom: 0;
+}
+
+/* footer css end*/
